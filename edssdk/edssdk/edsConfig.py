@@ -29,9 +29,9 @@ class edsConfig:
 
         self.hadoop_setting = {}
         self.hadoop_setting['cluster_type'] = None
-        self.hadoop_setting['master_type'] = None
-        self.hadoop_setting['slave_type'] = None
-        self.hadoop_setting['slave_num'] = 0
+        self.hadoop_setting['main_type'] = None
+        self.hadoop_setting['subordinate_type'] = None
+        self.hadoop_setting['subordinate_num'] = 0
         
         self.command_setting = {}
         self.command_setting['id'] = None

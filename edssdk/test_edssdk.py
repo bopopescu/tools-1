@@ -23,8 +23,8 @@ def create():
     conf.name = 'test edssdk'
 #    conf.cloud_setting['region'] = 'cn-hangzhou'
 #    conf.cloud_setting['zone'] = 'cn-hangzhou-a'
-    conf.hadoop_setting['master_type'] = 'ecs.s2.large'
-    conf.hadoop_setting['slave_type'] = 'ecs.s2.large'
+    conf.hadoop_setting['main_type'] = 'ecs.s2.large'
+    conf.hadoop_setting['subordinate_type'] = 'ecs.s2.large'
     r = cluster.create(conf.getJson())
     if not r.ok:
         print 'requests post error'
